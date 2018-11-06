@@ -33,9 +33,9 @@ WikiPage: WikiPage to store collaborative data
 
 """
 
-from hfos.schemata.defaultform import defaultform, editbuttons
+from isomer.schemata.defaultform import defaultform, editbuttons
 from copy import deepcopy
-from hfos.schemata.base import base_object
+from isomer.schemata.base import base_object
 
 WikiPageSchema = base_object('wikipage', all_roles='crew')
 

@@ -32,10 +32,10 @@ Wiki manager
 """
 
 from uuid import uuid4
-from hfos.component import ConfigurableComponent
-from hfos.logger import error, warn
-from hfos.events.client import send
-from hfos.database import ValidationError, objectmodels
+from isomer.component import ConfigurableComponent
+from isomer.logger import error, warn
+from isomer.events.client import send
+from isomer.database import ValidationError, objectmodels
 import pymongo
 
 
@@ -57,7 +57,7 @@ class Wiki(ConfigurableComponent):
     * a list of registered pagenames
     """
 
-    channel = "hfosweb"
+    channel = 'isomer-web'
 
     def __init__(self, *args):
         super(Wiki, self).__init__('WIKI', *args)

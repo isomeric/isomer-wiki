@@ -44,12 +44,12 @@ This software package is a plugin module for HFOS.
           'hfos>=1.2.0',
           # 'docutils==0.12'
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     wiki=hfos.wiki.wiki:Wiki
-[hfos.schemata]
+[isomer.schemata]
     wikipage=hfos.wiki.wikipage:WikiPage
     wikitemplate=hfos.wiki.wikipage:WikiTemplate
-[hfos.provisions]
+[isomer.provisions]
     wikipages=hfos.wiki.provisions.pages:provision
     wikitemplate=hfos.wiki.provisions.templates:provision
     """,
