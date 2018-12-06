@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer - The distributed application framework
+# ==============================================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -44,7 +44,7 @@ import pymongo
 #     from docutils.core import publish_parts
 # except ImportError:
 #     publish_parts = None
-#     hfoslog("No docutils found! Install it to get full functionality!",
+#     isolog("No docutils found! Install it to get full functionality!",
 #             lvl=warn, emitter="WIKI")
 
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer - The distributed application framework
+# ==============================================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -23,35 +23,34 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="hfos-wiki",
-      version="0.0.1",
-      description="hfos-wiki",
-
-      author="Hackerfleet Community",
+setup(name="isomer-wiki",
+      version="0.0.2",
+      description="isomer-wiki",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-wiki",
+      url="https://github.com/isomeric/wiki",
       license="GNU Affero General Public License v3",
       packages=find_packages(),
-      long_description="""HFOS - Wiki
-===========
+      long_description="""Isomer - Wiki
+=============
 
 A modern, opensource approach to wiki management.
 
-This software package is a plugin module for HFOS.
+This software package is a plugin module for Isomer.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0',
+          'isomer>=1.2.0',
           # 'docutils==0.12'
       ],
       entry_points="""[isomer.components]
-    wiki=hfos.wiki.wiki:Wiki
+    wiki=isomer.wiki.wiki:Wiki
 [isomer.schemata]
-    wikipage=hfos.wiki.wikipage:WikiPage
-    wikitemplate=hfos.wiki.wikipage:WikiTemplate
+    wikipage=isomer.wiki.wikipage:WikiPage
+    wikitemplate=isomer.wiki.wikipage:WikiTemplate
 [isomer.provisions]
-    wikipages=hfos.wiki.provisions.pages:provision
-    wikitemplate=hfos.wiki.provisions.templates:provision
+    wikipages=isomer.wiki.provisions.pages:provision
+    wikitemplate=isomer.wiki.provisions.templates:provision
     """,
       test_suite="tests.main.main",
       )
