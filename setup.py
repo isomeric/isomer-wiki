@@ -23,27 +23,28 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="isomer-wiki",
-      version="0.0.2",
-      description="isomer-wiki",
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/wiki",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""Isomer - Wiki
+setup(
+    name="isomer-wiki",
+    version="0.0.2",
+    description="isomer-wiki",
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/wiki",
+    license="GNU Affero General Public License v3",
+    packages=find_packages(),
+    long_description="""Isomer - Wiki
 =============
 
-A modern, opensource approach to wiki management.
+Collaborative content management.
 
 This software package is a plugin module for Isomer.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.2.0',
-          # 'docutils==0.12'
-      ],
-      entry_points="""[isomer.components]
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0',
+        # 'docutils==0.12'
+    ],
+    entry_points="""[isomer.components]
     wiki=isomer.wiki.wiki:Wiki
 [isomer.schemata]
     wikipage=isomer.wiki.wikipage:WikiPage
@@ -52,5 +53,5 @@ This software package is a plugin module for Isomer.
     wikipages=isomer.wiki.provisions.pages:provision
     wikitemplate=isomer.wiki.provisions.templates:provision
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
