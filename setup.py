@@ -57,7 +57,7 @@ This software package is a plugin module for Isomer.
 """,
     dependency_links=[],
     install_requires=[
-        'isomer>=1.0.0',
+        'isomer>=1.0',
         # 'docutils==0.12'
     ],
     entry_points="""[isomer.components]
