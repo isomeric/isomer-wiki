@@ -3,7 +3,7 @@
 
 # Isomer - The distributed application framework
 # ==============================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -40,10 +40,14 @@ from isomer.schemata.base import base_object
 WikiPageSchema = base_object('wikipage', all_roles='crew')
 
 WikiPageSchema['properties'].update({
-    'title': {'type': 'string', 'title': 'Page Title',
-              'description': 'Short title'},
-    'html': {'type': 'string', 'format': 'html', 'title': 'Page content',
-             'description': 'Content'},
+    'title': {
+        'type': 'string', 'title': 'Page Title',
+        'description': 'Short title'
+    },
+    'html': {
+        'type': 'string', 'format': 'html', 'title': 'Page content',
+        'description': 'Content'
+    },
     # 'text': {'type': 'string', 'title': 'Raw text',
     #          'description': 'Unrendered raw text'},
     # 'history': {
